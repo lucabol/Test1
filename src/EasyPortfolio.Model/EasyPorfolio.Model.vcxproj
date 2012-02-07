@@ -75,6 +75,9 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dbc.hpp" />
+    <ClInclude Include="discriminated_union.hpp" />
+    <ClInclude Include="functional.hpp" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
