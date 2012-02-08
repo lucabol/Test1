@@ -79,8 +79,11 @@
     <ClInclude Include="dbc.hpp" />
     <ClInclude Include="discriminated_union.hpp" />
     <ClInclude Include="functional.hpp" />
+    <ClInclude Include="Model.hpp" />
+    <ClInclude Include="Record.hpp" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="unicode.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
