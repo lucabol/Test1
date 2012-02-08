@@ -1,6 +1,8 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
+#include <stdint.h>
+
 #include "record.hpp"
 #include "unicode.hpp"
 
@@ -12,7 +14,10 @@ extern "C" {
 #define SHORT_STRING_LENGTH 50
 #define DATE_STRING_LENGTH	10
 
-typedef int id_type;
+// Making sure all compilers use the same packing
+#pragma pack(8)
+
+typedef uint32_t id_type;
 typedef TCHAR long_string[LONG_STRING_LENGTH];
 typedef TCHAR short_string[SHORT_STRING_LENGTH];
 typedef TCHAR date_string[DATE_STRING_LENGTH];
@@ -23,12 +28,12 @@ typedef struct Portfolio {
 	id_type		PortfolioId;
 	id_type		Parent;
 	long_string	Name;
-} Portfolio;
+} PACKED Portfolio;
 
 typedef struct Lot {
 	id_type		LotId;
 	id_type		PortfolioId;
-} Lot;
+} PACKED Lot;
 
 typedef struct Investment {
 	id_type			InvestmentId;
@@ -38,7 +43,7 @@ typedef struct Investment {
 	short_string	CUSIP;
 	id_type			InvestmentTypeId;
 	id_type			CurrencyId;
-} Investment;
+} PACKED Investment;
 
 typedef struct Price {
 	id_type		PriceId;
@@ -49,7 +54,7 @@ typedef struct Price {
 	money		Low;
 	shares		Volume;
 	id_type		InvestmentId;
-} Price;
+} PACKED Price;
 
 typedef Transaction {
 	id_type		TransactionId;
@@ -57,17 +62,17 @@ typedef Transaction {
 	money		Price;
 	shares		Shares;
 	money		Commission;
-} Transaction;
+} PACKED Transaction;
 
 typedef Currency {
 	id_type		CurrencyId;
 	long_string	Name;
-} Currency;
+} PACKED Currency;
 
 typedef InvestmentType {
 	type_id		InvestmentTypeId;
 	long_string	Name;
-} InvestmentType;
+} PACKED InvestmentType;
 
 #ifdef __cplusplus
 }
