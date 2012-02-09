@@ -5,6 +5,7 @@
 
 #include "record.hpp"
 #include "unicode.h"
+#include "platform.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -29,12 +30,13 @@ typedef struct Portfolio {
 	id_type		Parent;
 	long_string	Name;
 
-	POD_EQUALITY(Portfolio);
+	POD_EQUALITY(Portfolio)
 } Portfolio;
 
 typedef struct Lot {
 	id_type		LotId;
 	id_type		PortfolioId;
+	POD_EQUALITY(Lot)
 } Lot;
 
 typedef struct Investment {
@@ -45,6 +47,7 @@ typedef struct Investment {
 	short_string	CUSIP;
 	id_type			InvestmentTypeId;
 	id_type			CurrencyId;
+	POD_EQUALITY(Investment)
 } Investment;
 
 typedef struct Price {
@@ -56,6 +59,7 @@ typedef struct Price {
 	money		Low;
 	shares		Volume;
 	id_type		InvestmentId;
+	POD_EQUALITY(Price)
 } Price;
 
 typedef struct Transaction {
@@ -64,17 +68,22 @@ typedef struct Transaction {
 	money		Price;
 	shares		Shares;
 	money		Commission;
+	POD_EQUALITY(Transaction)
 } Transaction;
 
 typedef struct Currency {
 	id_type		CurrencyId;
 	long_string	Name;
+	POD_EQUALITY(Currency)
 } Currency;
 
 typedef struct InvestmentType {
 	id_type		InvestmentTypeId;
 	long_string	Name;
+	POD_EQUALITY(InvestmentType)
 } InvestmentType;
+
+DLL_EXPORT Portfolio CreatePortfolio();
 
 #ifdef __cplusplus
 }
