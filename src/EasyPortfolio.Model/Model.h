@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 #include "record.hpp"
-#include "unicode.hpp"
+#include "unicode.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -28,12 +28,14 @@ typedef struct Portfolio {
 	id_type		PortfolioId;
 	id_type		Parent;
 	long_string	Name;
-} PACKED Portfolio;
+
+	POD_EQUALITY(Portfolio);
+} Portfolio;
 
 typedef struct Lot {
 	id_type		LotId;
 	id_type		PortfolioId;
-} PACKED Lot;
+} Lot;
 
 typedef struct Investment {
 	id_type			InvestmentId;
@@ -43,7 +45,7 @@ typedef struct Investment {
 	short_string	CUSIP;
 	id_type			InvestmentTypeId;
 	id_type			CurrencyId;
-} PACKED Investment;
+} Investment;
 
 typedef struct Price {
 	id_type		PriceId;
@@ -54,25 +56,25 @@ typedef struct Price {
 	money		Low;
 	shares		Volume;
 	id_type		InvestmentId;
-} PACKED Price;
+} Price;
 
-typedef Transaction {
+typedef struct Transaction {
 	id_type		TransactionId;
 	date_string	Date;
 	money		Price;
 	shares		Shares;
 	money		Commission;
-} PACKED Transaction;
+} Transaction;
 
-typedef Currency {
+typedef struct Currency {
 	id_type		CurrencyId;
 	long_string	Name;
-} PACKED Currency;
+} Currency;
 
-typedef InvestmentType {
-	type_id		InvestmentTypeId;
+typedef struct InvestmentType {
+	id_type		InvestmentTypeId;
 	long_string	Name;
-} PACKED InvestmentType;
+} InvestmentType;
 
 #ifdef __cplusplus
 }

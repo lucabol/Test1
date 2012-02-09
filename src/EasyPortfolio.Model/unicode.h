@@ -1,17 +1,21 @@
 #ifndef UNICODE_HPP
 #define UNICODE_HPP
 
+
 #ifdef __cplusplus
+#include <string>
+#include <iostream>
+
 	#if defined(UNICODE)
 		typedef std::wstring tstring;
-		wostream & tcout = wcout;
-		wostream & tcerr = wcerr;
-		wistream & tcin = wcin;
+		std::wostream & tcout = std::wcout;
+		std::wostream & tcerr = std::wcerr;
+		std::wistream & tcin = std::wcin;
 	#else
 		typedef std::string tstring;
-		ostream & tcout = cout;
-		ostream & tcerr = cerr;
-		istream & tcin = cin;
+		std::ostream & tcout = std::cout;
+		std::ostream & tcerr = std::cerr;
+		std::istream & tcin = std::cin;
 	#endif
 #endif
 
