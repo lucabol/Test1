@@ -1,7 +1,7 @@
 #ifndef RECORD_HPP
 #define RECORD_HPP
 
-    // Helpers for functional types, i.e. records, tuples, variant, option
+    /* Helpers for functional types, i.e. records, tuples, variant, option */
     #ifdef __cplusplus
         #define POD_EQUALITY(Record)                                                                       \
                bool operator==(Record& other) const {                                          \
@@ -12,4 +12,4 @@
         #define POD_EQUALITY(Record)
     #endif
 
-#endif // guard
+#endif

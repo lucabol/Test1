@@ -14,6 +14,7 @@
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
 				<Compiler>
+					<Add option="-std=c++0x" />
 					<Add option="-Wall" />
 					<Add option="-g" />
 					<Add option="-DBUILD_DLL" />
@@ -43,9 +44,14 @@
 		<Unit filename="src\EasyPortfolio.Model\functional.hpp" />
 		<Unit filename="src\EasyPortfolio.Model\platform.h" />
 		<Unit filename="src\EasyPortfolio.Model\record.hpp" />
-		<Unit filename="src\EasyPortfolio.Model\stdafx.cpp" />
-		<Unit filename="src\EasyPortfolio.Model\stdafx.h" />
-		<Unit filename="src\EasyPortfolio.Model\targetver.h" />
+		<Unit filename="src\EasyPortfolio.Model\sqlite3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\EasyPortfolio.Model\sqlite3.h" />
+		<Unit filename="src\EasyPortfolio.Model\sqlite3pp.cpp" />
+		<Unit filename="src\EasyPortfolio.Model\sqlite3pp.hpp" />
+		<Unit filename="src\EasyPortfolio.Model\sqlite3ppext.cpp" />
+		<Unit filename="src\EasyPortfolio.Model\sqlite3ppext.hpp" />
 		<Unit filename="src\EasyPortfolio.Model\unicode.h" />
 		<Extensions>
 			<code_completion />

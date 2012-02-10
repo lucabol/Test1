@@ -2,6 +2,7 @@
 #define MODEL_HPP
 
 #include <stdint.h>
+#include <string.h>
 
 #include "record.hpp"
 #include "unicode.h"
@@ -15,7 +16,7 @@ extern "C" {
 #define SHORT_STRING_LENGTH 50
 #define DATE_STRING_LENGTH	10
 
-// Making sure all compilers use the same packing
+/* Making sure all compilers use the same packing */
 #pragma pack(8)
 
 typedef uint32_t id_type;
@@ -87,6 +88,6 @@ DLL_EXPORT Portfolio CreatePortfolio();
 
 #ifdef __cplusplus
 }
-#endif // extern C
+#endif
 
-#endif // guard
+#endif

@@ -8,15 +8,16 @@
 	<iostream>
 	<vector>
 
-1328813420 source:c:\projects\easyportfolio\src\easyportfolio.model\export.cpp
-	"stdafx.h"
+1328909356 source:c:\projects\easyportfolio\src\easyportfolio.model\export.cpp
 	"Model.h"
 	"platform.h"
 
-1328813420 c:\projects\easyportfolio\src\easyportfolio.model\model.h
+1328913710 c:\projects\easyportfolio\src\easyportfolio.model\model.h
 	<stdint.h>
+	<string.h>
 	"record.hpp"
 	"unicode.h"
+	"platform.h"
 
 1328813420 c:\projects\easyportfolio\src\easyportfolio.model\record.hpp
 
@@ -25,4 +26,76 @@
 	<iostream>
 
 1328813420 c:\projects\easyportfolio\src\easyportfolio.model\platform.h
+
+1326747894 source:c:\projects\easyportfolio\src\easyportfolio.model\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<os2safe.h>
+	<os2.h>
+	<uconv.h>
+	<ctype.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<utime.h>
+	<dlfcn.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1328911847 source:c:\projects\easyportfolio\src\easyportfolio.model\sqlite3pp.cpp
+	"sqlite3pp.hpp"
+
+1328913299 c:\projects\easyportfolio\src\easyportfolio.model\sqlite3pp.hpp
+	<string>
+	<stdexcept>
+	<boost/cstdint.hpp>
+	<boost/utility.hpp>
+	<boost/tuple/tuple.hpp>
+	<boost/iterator/iterator_facade.hpp>
+	<boost/function.hpp>
+	"sqlite3.h"
+
+1326747894 c:\projects\easyportfolio\src\easyportfolio.model\sqlite3.h
+	<stdarg.h>
+
+1328912264 source:c:\projects\easyportfolio\src\easyportfolio.model\sqlite3ppext.cpp
+	"sqlite3ppext.hpp"
+
+1328912273 c:\projects\easyportfolio\src\easyportfolio.model\sqlite3ppext.hpp
+	"sqlite3pp.hpp"
+	<map>
+	<boost/shared_ptr.hpp>
+	<boost/type_traits.hpp>
 

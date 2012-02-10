@@ -1,7 +1,8 @@
 #include "../EasyPortfolio.Model/model.h"
 
-void main()
+int main()
 {
 	Portfolio port = CreatePortfolio();
+	return port.PortfolioId;
 }
 

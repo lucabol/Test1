@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1328914104 source:c:\projects\easyportfolio\src\easyportfolio.test\test.c
+	"../EasyPortfolio.Model/model.h"
+
+1328913710 c:\projects\easyportfolio\src\easyportfolio.model\model.h
+	<stdint.h>
+	<string.h>
+	"record.hpp"
+	"unicode.h"
+	"platform.h"
+
+1328813420 c:\projects\easyportfolio\src\easyportfolio.model\record.hpp
+
+1328813420 c:\projects\easyportfolio\src\easyportfolio.model\unicode.h
+	<string>
+	<iostream>
+
+1328813420 c:\projects\easyportfolio\src\easyportfolio.model\platform.h
+
