@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 #include "Model.h"
 #include "platform.h"
 
