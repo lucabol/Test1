@@ -83,11 +83,15 @@
     <ClInclude Include="platform.h" />
     <ClInclude Include="Record.hpp" />
     <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="sqlite3pp.hpp" />
+    <ClInclude Include="sqlite3ppext.hpp" />
     <ClInclude Include="unicode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Export.cpp" />
     <ClCompile Include="sqlite3.c" />
+    <ClCompile Include="sqlite3pp.cpp" />
+    <ClCompile Include="sqlite3ppext.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
